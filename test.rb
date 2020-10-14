@@ -1,13 +1,7 @@
 require_relative 'robot_name'
 
-r = Robot.new
+r1 = Robot.new.name
+r2 = Robot.new.name
 
-p r.name
+p r1
 
-r.setup
-
-p r.name
-
-r.reset
-
-p r.name
