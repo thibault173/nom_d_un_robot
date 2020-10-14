@@ -1,10 +1,21 @@
 class Robot
-  attr_reader :name
+  attr_accessor :name
 
-  def first_start
-    @name = ''
+  # def initialize(name = nil)
+  #   @name = name
+  # end
+
+  def setup
+    reset
     2.times { @name += random_letter }
     3.times { @name += rand(10).to_s }
+  end
+
+  def self.forget
+  end
+
+  def reset
+    @name = ''
   end
 
   private

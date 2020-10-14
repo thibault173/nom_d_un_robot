@@ -4,6 +4,10 @@ r = Robot.new
 
 p r.name
 
-r.first_start
+r.setup
+
+p r.name
+
+r.reset
 
 p r.name
